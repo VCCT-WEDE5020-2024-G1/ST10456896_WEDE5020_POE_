@@ -1,0 +1,288 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #e9eff2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+header {
+    background-color: #2a8a64; 
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImage {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-bar {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}
+
+.nav-bar button {
+    background-color: #ffffff;
+    border: 2px solid #2a8a64; 
+    color: #2a8a64; 
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar button:hover {
+    background-color: #2a8a64; 
+    color: #ffffff;
+}
+
+h1, h2 {
+    text-align: center; 
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center; 
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.course-button:hover {
+    background-color: #2a8a64; 
+    color: #ffffff;
+}
+
+.Information {
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 20px; 
+    margin: 20px;
+    border-radius: 10px; 
+}
+
+.Information h1 {
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+}
+
+.accountDetailsContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.background-page, .background-page1, .background-page2, .background-page3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+}
+
+.background-page {
+    background-image: url(./assets/StockCake-Joyful\ Graduation\ Embrace_1727278287.jpg)
+}
+
+.background-page1 {
+    background-image: url(./assets/StockCake-Serene\ University\ Campus_1727279916.jpg);
+}
+
+.background-page2 {
+    background-image: url(./assets/StockCake-Diverse\ Food\ Sharing_1727282249.jpg);
+}
+
+.background-page3 {
+    background-image: url(./assets/StockCake-Digital\ contact\ form_1727280689.jpg);
+}
+
+.courseItem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.courseItem img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.courseItem h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #2a8a64; 
+}
+
+.courseItem p {
+    padding: 0 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    background-color: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100vw;
+}
+
+.enroll-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.enroll-section h1 {
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.enroll-section p {
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center; 
+}
+
+.enroll-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.enroll-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+}
+
+.enroll-form input, 
+.enroll-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button, .course-button, .enroll-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    border: 2px solid #2a8a64; 
+    color: #2a8a64;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+button:hover, .course-button:hover, .enroll-button:hover {
+    background-color: #2a8a64;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media(max-width:800px) {
+    html {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    body {
+        align-items: center;
+        width: 100vw;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .nav-bar {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .nav-bar a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-bar a button {
+        width: 80%;
+        text-align: center;
+    }
+
+    .Information {
+        margin: 20px;
+    }
+
+    .enroll-section {
+        width: 80%;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
