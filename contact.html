@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empowering The Nation - providing skills development training, domestic workers, gardeners, and more">
+    <meta name="keywords" content="skills development, training, personal growth, professional development, domestic workers,">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Empowering The Nation">
     <link rel="stylesheet" href="styles.css">
     <title>Contact Us - Empowering The Nation</title>
 </head>
@@ -26,11 +30,30 @@
         <p><strong>Email:</strong> pradebe@gmail.com</p>
         <p><strong>Phone Number:</strong> 021 300 5222</p>
         <p><strong>Address:</strong> 97 Somerset West, Cape Town, 7123, South Africa</p>
+
+        <h2>Contact Form</h2>
+        <form action="mailto:info@empoweringthenation.com" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="Enter your name" onclick="clearField(this)" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value="Enter your email" onclick="clearField(this)" required><br><br>
+
+            <label for="Course">Course:</label><br>
+            <input type="text" id="subject" name="subject" value="Course" onclick="clearField(this)"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" onclick="clearField(this)">Enter your message here</textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+
         <h2>Working to Serve the People!</h2>
     </main>
 
     <footer>
         <p>&copy; 2024 Empowering The Nation. All rights reserved.</p>
     </footer>
+    <script src="myscripts.js"></script>
 </body>
 </html>

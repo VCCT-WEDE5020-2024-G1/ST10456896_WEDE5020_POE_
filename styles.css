@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #2a8a64; 
+    background-color: #2a8a64;
     padding: 20px 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -39,8 +40,8 @@ header {
 
 .nav-bar button {
     background-color: #ffffff;
-    border: 2px solid #2a8a64; 
-    color: #2a8a64; 
+    border: 2px solid #2a8a64;
+    color: #2a8a64;
     border-radius: 6px;
     padding: 10px 16px;
     cursor: pointer;
@@ -49,12 +50,12 @@ header {
 }
 
 .nav-bar button:hover {
-    background-color: #2a8a64; 
+    background-color: #2a8a64;
     color: #ffffff;
 }
 
 h1, h2 {
-    text-align: center; 
+    text-align: center;
     color: #fff;
 }
 
@@ -72,35 +73,18 @@ h2 {
 }
 
 p {
-    text-align: center; 
+    text-align: center;
     font-size: 1.1rem;
     line-height: 1.6;
     margin: 10px 0;
 }
 
-.course-button:hover {
-    background-color: #2a8a64; 
-    color: #ffffff;
-}
-
 .Information {
     text-align: center;
     border: 2px solid #fff;
-    padding: 20px; 
+    padding: 20px;
     margin: 20px;
-    border-radius: 10px; 
-}
-
-.Information h1 {
-    font-weight: bold;
-    width: 100%;
-    color: #fff;
-}
-
-.accountDetailsContent {
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
+    border-radius: 10px;
 }
 
 .content {
@@ -111,7 +95,10 @@ p {
     padding: 20px;
 }
 
-.background-page, .background-page1, .background-page2, .background-page3 {
+.background-page,
+.background-page1,
+.background-page2,
+.background-page3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +107,7 @@ p {
 }
 
 .background-page {
-    background-image: url(./assets/StockCake-Joyful\ Graduation\ Embrace_1727278287.jpg)
+    background-image: url(./assets/StockCake-Joyful\ Graduation\ Embrace_1727278287.jpg);
 }
 
 .background-page1 {
@@ -156,7 +143,7 @@ p {
 .courseItem h2 {
     font-size: 1.5rem;
     margin: 15px 0;
-    color: #2a8a64; 
+    color: #2a8a64;
 }
 
 .courseItem p {
@@ -170,7 +157,7 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .enroll-section {
@@ -191,7 +178,7 @@ footer {
 .enroll-section p {
     margin-bottom: 20px;
     color: #555;
-    text-align: center; 
+    text-align: center;
 }
 
 .enroll-form {
@@ -206,8 +193,7 @@ footer {
     color: #fff;
 }
 
-.enroll-form input, 
-.enroll-form select {
+.enroll-form input, .enroll-form select {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -219,7 +205,7 @@ button, .course-button, .enroll-button {
     padding: 10px 20px;
     font-size: 0.95rem;
     background-color: #ffffff;
-    border: 2px solid #2a8a64; 
+    border: 2px solid #2a8a64;
     color: #2a8a64;
     border-radius: 6px;
     cursor: pointer;
@@ -232,32 +218,21 @@ button:hover, .course-button:hover, .enroll-button:hover {
     transform: translateY(-2px);
 }
 
-@media(max-width:800px) {
-    html {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
+@media(max-width:600px) {
+    html, body {
+        width: 100%;
         overflow-x: hidden;
-    }
-
-    body {
-        align-items: center;
-        width: 100vw;
     }
 
     header {
         flex-direction: column;
         gap: 20px;
         align-items: center;
-        width: 100%;
         padding: 20px 0;
     }
 
     .nav-bar {
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        margin: 0;
         width: 100%;
         gap: 5px;
     }
@@ -265,24 +240,32 @@ button:hover, .course-button:hover, .enroll-button:hover {
     .nav-bar a {
         width: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
     }
 
-    .nav-bar a button {
+    .Information, .enroll-section {
         width: 80%;
-        text-align: center;
-    }
-
-    .Information {
-        margin: 20px;
-    }
-
-    .enroll-section {
-        width: 80%;
-    }
-
-    footer {
-        width: 100vw;
     }
 }
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
