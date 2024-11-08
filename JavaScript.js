@@ -31,9 +31,8 @@ function validateForm() {
     return true;
 }
 
-<script>
+function setFooterDate() {
+    const footer = document.querySelector('footer p');
     const currentYear = new Date().getFullYear();
-    document.getElementById("year").textContent = currentYear;
-</script>
-
-
+    footer.innerHTML = `&copy; ${currentYear} Empowering The Nations. All rights reserved.`;
+}
